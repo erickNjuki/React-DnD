@@ -19,11 +19,15 @@ import TaskCard from "./TaskCard";
 const defaultCols: Column[] = [
   {
     id: "todo",
-    title: "Todo",
+    title: "BackLog",
   },
   {
     id: "doing",
     title: "Work in progress",
+  },
+  {
+    id: "review",
+    title: "Review",
   },
   {
     id: "done",
