@@ -16,6 +16,7 @@ import { SortableContext, arrayMove } from "@dnd-kit/sortable";
 import { createPortal } from "react-dom";
 import TaskCard from "./TaskCard";
 
+// An array of default columns with their respective IDs and titles.
 const defaultCols: Column[] = [
   {
     id: "todo",
@@ -35,6 +36,7 @@ const defaultCols: Column[] = [
   },
 ];
 
+// An array of default tasks with their IDs, content, and associated column .
 const defaultTasks: Task[] = [
   {
     id: "1",
@@ -135,7 +137,7 @@ function KanbanBoard() {
         px-[40px]
     "
     >
-      <DndContext
+      <DndContext //The DndContext component wraps the main Kanban board content and provides the context for drag-and-drop interactions.
         sensors={sensors}
         onDragStart={onDragStart}
         onDragEnd={onDragEnd}
